@@ -46,7 +46,7 @@ Basic Java application for training.
  - Try to fix it!
  <details>
  <summary>Click for Answer!</summary>
- When you are adding the two strings together, it adds "Hello!" and "Again!". There isn't a space inbetween, resulting in "Hello!Again!" You can fix it by adding a space after "Hello! " or before " Again!" View the solution if confused.
+ When you are concate (combine) the two strings together, it adds "Hello!" and "Again!". There isn't a space inbetween, resulting in "Hello!Again!" You can fix it by adding a space after "Hello! " or before " Again!" View the solution if confused.
  </details>
 
 #### Float
