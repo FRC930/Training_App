@@ -2,25 +2,11 @@ package _training;
 
 public class Variables {
     public static void main(String[] args) {
-        int myNum = 62;
-        int myOtherNum = 12;
-        int myOtherOtherNum = 10;
-        float myDecimal = 2.5f;
-        float mySecondDecimal = 5.0f;
-        boolean ateBreakfast = true;
-        boolean ateLunch = true;
-        boolean ateDinner = false;
+        int myNum = 1;
+        int myOtherNum = 2;
 
         // Get the sum of the two numbers
-        int myFinalNum = (myNum + myOtherNum) * myOtherOtherNum;
-        float myFinalDecimal = myDecimal / mySecondDecimal;
+        int myFinalNum = myNum + myOtherNum;
         System.out.println(myFinalNum);
-        String myText = "Hello!";
-        String myOtherText = " Again";
-        String myFinalText = myText + myOtherText;
-        System.out.println(myFinalText);
-        System.out.println(myFinalDecimal);
-        System.out.println(ateBreakfast && ateLunch);
-        System.out.println(ateLunch && ateDinner);
     }
 }
