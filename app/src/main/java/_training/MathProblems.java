@@ -127,6 +127,7 @@ public class MathProblems {
 
         int l = j + k;
         System.out.println(l + " int");
+        System.out.println(l);
 
         float q = 3.6f;
         float w = 4.3f;
