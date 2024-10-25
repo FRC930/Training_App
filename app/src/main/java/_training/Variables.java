@@ -22,17 +22,5 @@ public class Variables {
         System.out.println(myFinalDecimal);
         System.out.println(ateBreakfast && ateLunch);
         System.out.println(ateLunch && ateDinner);
-
-        // Get the sum of the two numbers
-        int myFinalNum = (myNum + myOtherNum) * myOtherOtherNum;
-        float myFinalDecimal = myDecimal / mySecondDecimal;
-        System.out.println(myFinalNum);
-        String myText = "Hello!";
-        String myOtherText = " Again";
-        String myFinalText = myText + myOtherText;
-        System.out.println(myFinalText);
-        System.out.println(myFinalDecimal);
-        System.out.println(ateBreakfast && ateLunch);
-        System.out.println(ateLunch && ateDinner);
     }
 }
