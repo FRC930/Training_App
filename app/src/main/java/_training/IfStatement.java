@@ -7,8 +7,21 @@ public class IfStatement {
         boolean didHomework = false;
         boolean preparedForRobotics = true;
 
-        if((brushedTeeth || tookMints) && didHomework && preparedForRobotics){
+        if ( (brushedTeeth || tookMints) && didHomework && preparedForRobotics) {
             System.out.println("I can go to robotics tonight!");
+        } else {
+            System.out.println("I can't go to robotics yet.");
         }
+        if ((brushedTeeth || tookMints) && didHomework && preparedForRobotics) {
+            System.out.println("I can go to robotics tonight!");
+        } else if (!(brushedTeeth || tookMints)) {
+            System.out.println("Gotta freshen up!");
+        } else if (!didHomework) {
+            System.out.println("Oh darn, I gotta do my Math homework!");
+        } else if (!preparedForRobotics) {
+            System.out.println("Oop, I need to finish finding my sponsors!");
+        }
+
     }
 }
+
