@@ -1,13 +1,13 @@
 package _training;
 
 public class Functions {
-    static void printHi() {
-        System.out.println("Hello!");
+    static void Hhhmmm() {
+        System.out.println("hhhhhhhhhhhhhmmmmmmmmmmmmmmmmmmmmmm");
     }
 
     public static void main(String[] args) {
-        printHi();
-        printHi();
-        printHi();
+        Hhhmmm();
+        Hhhmmm();
+        Hhhmmm();
     }
 }
