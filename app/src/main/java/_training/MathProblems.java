@@ -1,8 +1,64 @@
 package _training;
 
 public class MathProblems {
-    public static void main(String[] args) {
-    int myNum = 1;
+    static void Int(int myNum, int myNum2, int myMinusNum, int MinusNum2, int myMultiNum, int MultiNum2, int DiviNum, int DiviNum2){
+        System.out.println(myMinusNum-myMinusNum2);
+        System.out.println(myNum+myNum2);
+        System.out.println(myMultiNum*myMultiNum2);
+        System.out.println(myDiviNum/myDiviNum2);
+    }
+    static void Float(float myFloatNum, float myFloatNum2, float myMinusFloatNum, float myMinusFloatNum2, float myMultiFloatNum, float myMultiFloatNum2, float myDiviFloatNum, float myDiviFloatNum2){
+        System.out.println(myMinusFloatNum-myMinusFloatNum2);
+        System.out.println(myFloatNum+myFloatNum2);
+        System.out.println(myMultiFloatNum+myMultiFloatNum2);
+        System.out.println(myDiviFloatNum/myDiviFloatNum2);
+    }
+    static void Double(double myDoubleNum, double myDoubleNum2, double myMinusDoubleNum, double myMinusDoubleNum2, double myMultiDoubleNum, double myMultiDoubleNum2, double myDiviDoubleNum, double myDiviDoubleNum2){
+        System.out.println(myMinusDoubleNum-myMinusDoubleNum2);
+        System.out.println(myDoubleNum+myDoubleNum2);
+        System.out.println(myMultiDoubleNum+myMultiDoubleNum2);
+        System.out.println(myDiviDoubleNum/myDiviDoubleNum2);
+    }
+    static void addInt(int myNum, int myNum2){
+        System.out.println(myNum+myNum2);
+    }
+    static void subInt(int myMinusNum, int myMinusNum2){
+        System.out.println(myMinusNum+myMinusNum2);
+    }
+    static void multiInt(int myMultiNum, int myMultiNum2){
+        System.out.println(myMultiNum+myMultiNum2);
+    }
+    static void diviInt(int myDiviNum, int myDiviNum2){
+        System.out.println(myDiviNum+myDiviNum2);
+    }
+    static void addFloat(float myFloatNum, float myFloatNum2){
+        System.out.println(myFloatNum+myFloatNum2);
+    }
+    static void subFloat(float myMinusFloatNum, int myMinusFloatNum2){
+        System.out.println(myMinusFloatNum+myMinusFloatNum2);
+    }
+    static void multiFloat(float myMultiFloatNum, float myMultiFloatNum2){
+        System.out.println(myMultiFloatNum+myMultiFloatNum2);
+    }
+    static void diviFloat(float myDiviFloatNum, float myDiviFloatNum2){
+        System.out.println(myDiviFloatNum+myDiviFloatNum2);
+    }
+    static void addDouble(double myDoubleNum, double myDoubleNum2){
+        System.out.println(myDoubleNum+myDoubleNum2);
+    }
+    static void subDouble(double myMinusDoubleNum, double myMinusDoubleNum2){
+        System.out.println(myMinusDoubleNum+myMinusDoubleNum2);
+    }
+    static void multiDouble(double myMultiDoubleNum, double myMultiDoubleNum2){
+        System.out.println(myMultiDoubleNum+myMultiDoubleNum2);
+    }
+    static void diviDouble(double myDiviDoubleNum, double myDiviDoubleNum2){
+        System.out.println(myDiviDoubleNum+myDiviDoubleNum2);
+    }
+    public static void main(String[] args){
+        Int(1,2,1,2,1,2,1,2);
+    
+        int myNum = 1;
     int myNum2 = 2;
     int myMinusNum = 1;
     int myMinusNum2 = 2;
@@ -69,6 +125,5 @@ public class MathProblems {
     System.out.println ("Double Divide = " + myFinalDiviDoubleNum);
     
     System.out.println ("");
-
     }
 }
