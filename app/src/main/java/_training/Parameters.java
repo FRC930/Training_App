@@ -1,13 +1,15 @@
 package _training;
 
 public class Parameters {
-    static void square(int num){
-        System.out.println(num*num);
+    static void multiply(int silly2, int silly){
+        System.out.println(silly2*silly);
     }
 
     public static void main(String[] args){
-        square(3);
-        square(5);
-        square(10);
+        int silly = 5;
+        int silly2 = 5;
+        multiply(3, 2);
+        multiply(5, 2);
+        multiply(10, 2);
     }
 }
