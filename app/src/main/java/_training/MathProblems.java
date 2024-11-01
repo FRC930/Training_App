@@ -1,24 +1,6 @@
 package _training;
 
 public class MathProblems {
-    static void Int(int myNum, int myNum2, int myMinusNum, int MinusNum2, int myMultiNum, int MultiNum2, int DiviNum, int DiviNum2){
-        System.out.println(myMinusNum-myMinusNum2);
-        System.out.println(myNum+myNum2);
-        System.out.println(myMultiNum*myMultiNum2);
-        System.out.println(myDiviNum/myDiviNum2);
-    }
-    static void Float(float myFloatNum, float myFloatNum2, float myMinusFloatNum, float myMinusFloatNum2, float myMultiFloatNum, float myMultiFloatNum2, float myDiviFloatNum, float myDiviFloatNum2){
-        System.out.println(myMinusFloatNum-myMinusFloatNum2);
-        System.out.println(myFloatNum+myFloatNum2);
-        System.out.println(myMultiFloatNum+myMultiFloatNum2);
-        System.out.println(myDiviFloatNum/myDiviFloatNum2);
-    }
-    static void Double(double myDoubleNum, double myDoubleNum2, double myMinusDoubleNum, double myMinusDoubleNum2, double myMultiDoubleNum, double myMultiDoubleNum2, double myDiviDoubleNum, double myDiviDoubleNum2){
-        System.out.println(myMinusDoubleNum-myMinusDoubleNum2);
-        System.out.println(myDoubleNum+myDoubleNum2);
-        System.out.println(myMultiDoubleNum+myMultiDoubleNum2);
-        System.out.println(myDiviDoubleNum/myDiviDoubleNum2);
-    }
     static void addInt(int myNum, int myNum2){
         System.out.println(myNum+myNum2);
     }
@@ -56,45 +38,18 @@ public class MathProblems {
         System.out.println(myDiviDoubleNum+myDiviDoubleNum2);
     }
     public static void main(String[] args){
-        Int(1,2,1,2,1,2,1,2);
-    
-        int myNum = 1;
-    int myNum2 = 2;
-    int myMinusNum = 1;
-    int myMinusNum2 = 2;
-    int myMultiNum = 1;
-    int myMultiNum2 = 2;
-    int myDiviNum = 1;
-    int myDiviNum2 = 2;
-    float myFloatNum = 1;
-    float myFloatNum2 = 2;
-    float myMinusFloatNum = 1;
-    float myMinusFloatNum2 = 2;
-    float myMultiFloatNum = 1;
-    float myMultiFloatNum2 = 2;
-    float myDiviFloatNum = 1;
-    float myDiviFloatNum2 = 2;
-    double myDoubleNum = 1;
-    double myDoubleNum2 = 2;
-    double myMinusDoubleNum = 1;
-    double myMinusDoubleNum2 = 2;
-    double myMultiDoubleNum = 1;
-    double myMultiDoubleNum2 = 2;
-    double myDiviDoubleNum = 1;
-    double myDiviDoubleNum2 = 2; 
-
-    int myFinalNum = (myNum + myNum2);
-    int myFinalMinusNum = (myMinusNum - myMinusNum2);
-    int myFinalMultiNum = (myMultiNum * myMultiNum2);
-    int myFinalDiviNum = (myDiviNum / myDiviNum2);
-    float myFinalFloatNum = (myFloatNum + myFloatNum2);
-    float myFinalMinusFloatNum = (myMinusFloatNum - myMinusFloatNum2);
-    float myFinalMultiFloatNum = (myMultiFloatNum * myMultiFloatNum2);
-    float myFinalDiviFloatNum = (myDiviFloatNum / myDiviFloatNum2);
-    double myFinalDoubleNum = (myDoubleNum + myDoubleNum2);
-    double myFinalMinusDoubleNum = (myMinusDoubleNum - myMinusDoubleNum2);
-    double myFinalMultiDoubleNum = (myMultiDoubleNum * myMultiDoubleNum2);
-    double myFinalDiviDoubleNum = (myDiviDoubleNum / myDiviDoubleNum2);
+    addInt(1,2);
+    subInt(1,2);
+    multiInt(1,2);
+    diviInt(1,2);
+    addFloat(1,2);
+    subFloat(1,2);
+    multiFloat(1,2);
+    diviFloat(1,2);
+    addDouble(1,2);
+    subDouble(1,2);
+    multiDouble(1,2);
+    diviDouble(1,2);
     
     System.out.println ("");
 
