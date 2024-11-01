@@ -51,20 +51,14 @@ public class MathProblems {
     
     public static void main(String[] args) {
         
-        int myNum = 1;
-        int myotherNum = 2;
-        int myFinalNum = myNum + myotherNum;
-        System.out.println(myFinalNum);
+       
+            System.out.println(addition(5, 2));
 
-        float mydecimal = 3.0f;
-        float mydecimal2 = 4.0f;
-        float myFinalDecimal = mydecimal + mydecimal2; 
-        System.out.println(myFinalDecimal);
+            System.out.println(subtraction(3, 4));
 
-        double mydecimal3 = 5.00;
-        double mydecimal4 = 6.00;
-        double myfinaldecimal2 = mydecimal3 + mydecimal4;
-        System.out.println(myfinaldecimal2);
+        
+
+        
 
         int mynum2 = 2;
         int myothernum2 = 3; 
