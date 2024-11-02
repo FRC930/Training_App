@@ -10,5 +10,7 @@ public class While {
         }
 
         System.out.println("I am done working! I have worked for "+hoursWorked+" hours!");
+        System.out.println("I am done working! I have worked for "+hoursWorked+" hours!.....");
+        System.out.println("I am done working! I have worked for "+hoursWorked+" hours!.....");
     }
 }
