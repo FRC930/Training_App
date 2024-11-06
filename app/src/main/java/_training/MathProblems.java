@@ -1,86 +1,87 @@
 package _training;
 
 public class MathProblems {
-    public static void main(String[] args) {
+        static void additionint(int num, int num2){
+                System.out.println(num+num2);
+            
+        }
+        static void additionfloat(float num, float num2){
+                System.out.println(num+num2);
+            
+        }
+        static void additiondouble(double num, double num2){
+                System.out.println(num+num2);
+            
+        }
+        static void additionmyproblem(double num, double num2){
+                System.out.println(num+num2);
+            
+        }
+        static void subtractionint(int num, int num2){
+                System.out.println(num-num2);
+            
+        }
+        static void subtractionfloat(float num, float num2){
+                System.out.println(num-num2);
+            
+        }
+        static void subtractiondouble(double num, double num2){
+                System.out.println(num-num2);
+            
+        }
+        static void subtractionmyproblem(double num, double num2){
+                System.out.println(num-num2);
+            
+        }
+        static void multiplicationint(int num, int num2){
+                System.out.println(num*num2);
+            
+        }
+        static void multiplicationfloat(float num, float num2){
+                System.out.println(num*num2);
+            
+        }
+        static void multiplicationdouble(double num, double num2){
+                System.out.println(num*num2);
+            
+        }
+        
+        public static void main(String[] args){
         
         //section 1 addition
+
         System.out.println("\n");
         System.out.println("Addition");
         System.out.println("\n");
 
-        int j = 1;
-        int k = 2;
-
-        int l = j + k;
-        System.out.println(l + " int");
-
-        float q = 3.6f;
-        float w = 4.3f;
-
-        float e = q + w;
-        System.out.println(e + " float");
-
-        double n = 9.29485798364943872864;
-        double m = 3.14159265;
-
-        double b = n + m;
-        System.out.println(b + " double");
-
-
-        double lskdjf = Math.PI;
-        double owieur = Math.PI;
-
-        double ivchsdfh = lskdjf + owieur;
-        System.out.println(ivchsdfh + " my problem");
+        additionint(1, 2);
+        additionfloat(2.6f, 5.7f);
+        additiondouble(3.14159265389, 1.53634);
+        additionmyproblem(7.674256, 9.36254);
+        
         
         System.out.println("\n");
         System.out.println("Subtraction");
         System.out.println("\n");
 
+
         //section 2 subtraction
 
+        subtractionint(3, 1);
+        subtractionfloat(4.5f, 7.6f);
+        subtractiondouble(3.14159265389, 8.372856);
+        subtractionmyproblem(23.546346, 4.265567);
 
-        int ab = 34;
-        int cd = 12;
-
-        int ef = ab - cd;
-        System.out.println(ef + " int");
-
-        float gh = 56;
-        float ij = 78;
-
-        float kl =  gh - ij;
-        System.out.println(kl + " float");
-
-        double mn = Math.PI;
-        double op = Math.PI;
-
-        double qr = mn - op;
-        System.out.println(qr + " double");
-
-        double something = Math.PI;
-        double somethingelse = Math.PI;
-        double somethingelseelse = Math.PI;
-
-        double somethingelseelseelse = something - somethingelse - somethingelseelse;
-        System.out.println(somethingelseelseelse + " my problem");
 
         //section 3 multiplication
         System.out.println("\n");
         System.out.println("Multiplication");
         System.out.println("\n");
 
-        int who = 135;
-        int whowho = 868;
+        multiplicationint(7, 9);
+        multiplicationfloat(4.4f, 7.6f);
+        multiplicationdouble(6.24525765, 8.13426535);
 
-        int whowhowho = who * whowho;
-        System.out.println(whowhowho + " int");
-
-        float why = 97;
-        float whywhy = 65;
-
-        float whywhywhy = why * whywhy;
-        System.out.println(whywhywhy + " float");
 
         double me = -2134;
         double meme = 654;
