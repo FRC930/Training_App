@@ -14,5 +14,6 @@ public class Return {
 
         System.out.println(square(5) + square(3));
 
+        System.out.println(square1(5) / square1(2));
     }
 }
