@@ -6,7 +6,10 @@ public class IfStatement {
         boolean tookMints = false;
         boolean didHomework = true;
         boolean preparedForRobotics = true;
+        secondary(brushedTeeth, tookMints, didHomework, preparedForRobotics);
+    }
 
+    static void secondary(boolean brushedTeeth, boolean tookMints, boolean didHomework, boolean preparedForRobotics) {
         if ((brushedTeeth || tookMints) && didHomework && preparedForRobotics) {
             System.out.println("I can go to robotics tonight!");
         } else if (!(brushedTeeth || tookMints)) {
