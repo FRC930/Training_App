@@ -9,17 +9,18 @@ public class IfStatement {
         boolean chargedthecomputer = !true;
         boolean daymonday = true;
         boolean wasfocastedinmath = true;
+        boolean putdeoderant = true;
 
         if ((daymonday)){
             boolean schoolopen = true;
-        if ((schoolopen && chargedthecomputer && didHomework)){
+        if ((schoolopen && chargedthecomputer && didHomework && putdeoderant)){
             System.out.println("I am going to have a good day today");
         } else {
             System.out.println("today is not of to a good start");
         if ((wasfocastedinmath)){
             boolean homeworkformath = false;
         if ((homeworkformath)){
-            System.out.println("I was not focasted in class so I have no homework");
+            System.out.println("I was not focasted in class so I have homework");
             didHomework = false;
         } else {
             System.out.println("I was focasted in class so now I don't have homework");         
@@ -35,3 +36,4 @@ public class IfStatement {
         } else {
             System.out.println("I have a fully charged computer. Great!");
         }}}}}}
+        
