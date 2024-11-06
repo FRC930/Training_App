@@ -1,14 +1,18 @@
 package _training;
 
+import java.text.BreakIterator;
+
 public class While {
     public static void main(String[] args) {
         int hoursWorked = 0;
 
-        while (hoursWorked < 8) {
-            System.out.println("I have worked for "+hoursWorked+" hours!");
+        while (hoursWorked < 5) {
+            System.out.println("I have worked for " + hoursWorked + " hours!");
             hoursWorked = hoursWorked + 1;
         }
+        if (hoursWorked < 1) {
+        }
 
-        System.out.println("I am done working! I have worked for "+hoursWorked+" hours!");
+        System.out.println("I am done working! I have worked for " + hoursWorked + " hours!");
     }
 }

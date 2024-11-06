@@ -120,7 +120,7 @@ if ((brushedTeeth || tookMints) && didHomework && preparedForRobotics) {
  - Uh oh. The code is going to run forever! Look at the console, then stop the code with the stop sign in the top center of your screen.
  - This happens because evey time the while runs, it will decrement the hoursWorked, so it will never go up and past 8 hours. You will work hours backwards somehow, and eventually you will have worked -613620 hours...
  - Think of this happening on the robot. You accidentally make the robot move forward while the distance to the target is more than 5, but instead of decreasing the distance, you increase it... Not good! You always have to be very careful when writing for loops to make sure it doesn't crash when running.
- 4. Add an if statement checking if hoursWorked is less than 1 at the top of the loop, and inside the statement, add this code: `break;`
+ 4. Add an if statement checking if hoursWorked is less than 1 at the top of the loop, and inside the statement, add this code: break;`b`
  - What happens?
  - Ok, so working -1 hours and then stopping is not realistic, but this code does show as a check to make sure that something unrealistic doesn't happen, and prevents it becoming a ***major*** problem.
 
