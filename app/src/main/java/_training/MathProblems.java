@@ -45,6 +45,26 @@ public class MathProblems {
                 System.out.println(num*num2);
             
         }
+        static void multiplicationmyproblem(double num, double num2){
+                System.out.println(num*num2);
+            
+        }
+        static void divisionint(int num, int num2){
+                System.out.println(num*num2);
+            
+        }
+        static void divisionfloat(float num, float num2){
+                System.out.println(num*num2);
+            
+        }
+        static void divisiondouble(double num, double num2){
+                System.out.println(num*num2);
+            
+        }
+        static void divisionmyproblem(int num, int num2){
+                System.out.println(num*num2);
+            
+        }
         
         public static void main(String[] args){
         
@@ -74,6 +94,7 @@ public class MathProblems {
 
 
         //section 3 multiplication
+        
         System.out.println("\n");
         System.out.println("Multiplication");
         System.out.println("\n");
@@ -81,47 +102,18 @@ public class MathProblems {
         multiplicationint(7, 9);
         multiplicationfloat(4.4f, 7.6f);
         multiplicationdouble(6.24525765, 8.13426535);
-
-
-        double me = -2134;
-        double meme = 654;
-
-        double mememe = me * meme;
-        System.out.println(mememe + " double");
-
-        double ah = Math.PI;
-
-        double ahah = ah * ah;
-        System.out.println(ahah + " my problem");
+        multiplicationmyproblem(5.983265965, 8.23876587326);
 
         //section 4 division
+
         System.out.println("\n");
         System.out.println("Division");
         System.out.println("\n");
 
-        int dime = -9;
-        int dimedimedime = 9;
-
-        int dimedime = dimedimedime / dime;
-        System.out.println(dimedime + " int");
-
-        float quarter = 5.2f;
-        float quarterquarter = -89.7f;
-
-        float quarterquarterquarter = quarter / quarterquarter;
-        System.out.println(quarterquarterquarter + " float");
-
-        double nickle = 3.14159634785672356;
-        double nicklenickle = -957939279;
-
-        double nicklenicklenickle = nickle / nicklenickle;
-        System.out.println(nicklenicklenickle + " double");
-
-        int last = 1;
-        int lastproblem = 89;
-
-        int finalvariable = last + lastproblem * last;
-        System.out.println(finalvariable + " my last problem");
+        divisionint(7, 3);
+        divisionfloat(7f, 3.5f);
+        divisiondouble(34.9834628, 3.14159265358979);
+        divisionmyproblem(999999999, 10);
 
         //done
         
