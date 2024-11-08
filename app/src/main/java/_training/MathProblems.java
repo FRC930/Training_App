@@ -61,24 +61,28 @@ public class MathProblems {
         int millionstreams = 1000000;
         int millionstreamson = 1000;
         int millionstreamsonspotify = millionstreams * millionstreamson;
-        System.out.println(millionstreamsonspotify)
+        System.out.println(millionstreamsonspotify);
         System.out.println("this is showing "+millionstreams +" being multiplyed to " +millionstreamson +" in this equation");
         int mynumberdivone = 1;
         int mynumberdivtwo = 950;
         int mynumberdivthree = mynumberdivone / mynumberdivtwo;
         System.out.println( mynumberdivthree);
+        System.out.println( "this is showsing "+mynumberdivone +" being divided by " +mynumberdivtwo);
         float mynumberdivfour = 5.6f;
         float mynumberdivfive = 8.7f;
         float mynumberdivsix = mynumberdivfour / mynumberdivfive;
         System.out.println(mynumberdivsix);
+        System.out.println( "this is showing "+mynumberdivfour +" being divided by " +mynumberdivfive);
         double mynumberdivvone = 5.8;
         double mynumberdivvtwo = 96.7;
         double mynumberdivvthree = mynumberdivvone / mynumberdivvtwo;
         System.out.println(mynumberdivvthree);
+        System.out.println( "this is showing "+mynumberdivvone +" being divided by" +mynumberdivvtwo);
         int applecircle = 99900000;
         int applecircletwo = 99;
         int appletoexpencive = applecircle / applecircletwo;
         System.out.println(appletoexpencive);
+        System.out.println( "this is showing "+applecircle +" being divided by" +applecircletwo);
 
     }
 }
