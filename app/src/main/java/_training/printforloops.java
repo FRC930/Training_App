@@ -13,7 +13,7 @@ public class printforloops {
 
 
 
-        boolean f = true; //Creates a flag.
+        boolean f = !true; //Creates a flag.
         for (int i = 0; i <=100; i++){ // Adds one untill i reaches 100.
             //Even.
             
