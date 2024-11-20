@@ -10,6 +10,8 @@ public class Robots {
     public static void main(String[] args){
         int robotSpeed = 20; // Set the robot speed
         driveRobot("forward", robotSpeed); // Drive the robot forward
+        driveRobot("backward", robotSpeed); // Drive the robot backwards
         shootRobot("left"); // Shoot the robot to the left
+        shootRobot("right"); // Shoot the robot to the right
     }
 }
