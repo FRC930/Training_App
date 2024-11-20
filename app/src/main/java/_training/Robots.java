@@ -22,7 +22,7 @@ public class Robots {
         moveshoot("right", robotSpeed1);
         driveRobot("forward", robotSpeed1); // Drive the robot forward
         shootRobot("left"); // Shoot the robot to the left
-        jumprobot("right", robotSpeed1);
+        jumprobot("up", robotSpeed1);
     }
 }
     
