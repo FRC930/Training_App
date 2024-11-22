@@ -11,4 +11,5 @@ public class Food {
         this.name = name;
         System.out.println(name+ " is served!");
     }
+    
 }
