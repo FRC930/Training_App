@@ -5,8 +5,18 @@ import _training.Classes.Solutions.calculator;
 public class MathProblems {
     public static void main(String[] args) {
         calculator math = new calculator();
-        math.add
-
+        math.add(4.1, 5.2);
+        math.add(2.541, 3.5458);
+        math.add(2.6, 9.5);
+        math.sub(1, 5);
+        math.sub(3.667, 3.67);
+        math.sub(6.7, 2.4);
+        math.multi(1, 5);
+        math.multi(3.667, 3.67);
+        math.multi(5.7, 6.9);
+        math.div(1, 5);
+        math.div(3.667, 3.67);
+        math.div(8.1, 5.8);
 //         int mynumberone = 1;
 //         int mynumbertwo = 950;
 //         int mynumberthree = mynumberone + mynumbertwo;
