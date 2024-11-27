@@ -1,5 +1,7 @@
 package _training;
 
+import org.checkerframework.checker.units.qual.C;
+
 import _training.Classes.Calculator;
 
 public class MathProblems {
@@ -53,7 +55,6 @@ public class MathProblems {
 //         return myDiviDoubleNum / myDiviDoubleNum2;
 //     }
     public static void main(String[] args){
-        Calculator math = new Calculator();
 //     addInt(1,2);
 //     subInt(1,2);
 //     multiInt(1,2);
@@ -70,30 +71,30 @@ public class MathProblems {
     System.out.println ("");
 
     System.out.println ("ADDITION");
-    System.out.println ("int = " + math.Add(1,2));
-    System.out.println ("Double = " + math.Add(1,2));
-    System.out.println ("Float = " + math.Add(1,2));
+    System.out.println ("int = " + Calculator.Add(1,2));
+    System.out.println ("Double = " + Calculator.Add(1,2));
+    System.out.println ("Float = " + Calculator.Add(1,2));
     
     System.out.println ("");
 
     System.out.println ("MINUS");
-    System.out.println ("int Minus = " + math.Minus(1,2));
-    System.out.println ("Float Minus = " + math.Minus(1,2));
-    System.out.println ("Double Minus = " + math.Minus(1,2));
+    System.out.println ("int Minus = " + Calculator.Minus(1,2));
+    System.out.println ("Float Minus = " + Calculator.Minus(1,2));
+    System.out.println ("Double Minus = " + Calculator.Minus(1,2));
     
     System.out.println ("");
 
     System.out.println ("MULTIPLY");
-    System.out.println ("int Multiply = " + math.Multiply(1,2));
-    System.out.println ("Float Multiply = " + math.Multiply(1,2));
-    System.out.println ("Double Multiply = " + math.Multiply(1,2));
+    System.out.println ("int Multiply = " + Calculator.Multiply(1,2));
+    System.out.println ("Float Multiply = " + Calculator.Multiply(1,2));
+    System.out.println ("Double Multiply = " + Calculator.Multiply(1,2));
     
     System.out.println ("");
 
     System.out.println ("DIVIDE");
-    System.out.println ("int Divide = " + math.Divide(1,2));
-    System.out.println ("Float Divide = " + math.Divide(1,2));
-    System.out.println ("Double Divide = " + math.Divide(1,2));
+    System.out.println ("int Divide = " + Calculator.Divide(1,2));
+    System.out.println ("Float Divide = " + Calculator.Divide(1,2));
+    System.out.println ("Double Divide = " + Calculator.Divide(1,2));
     
     System.out.println ("");
     }
