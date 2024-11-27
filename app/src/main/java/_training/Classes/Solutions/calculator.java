@@ -23,32 +23,32 @@ public class calculator {
     }
     //subtration
     public int sub(int numone, int numtwo){
-        return numone + numtwo;
+        return numone - numtwo;
     }
     public float sub(float numone, float numtwo){
-        return numone + numtwo;
+        return numone - numtwo;
     }
     public double sub(double numone, double numtwo){
-        return numone + numtwo;
+        return numone - numtwo;
     }
     //mulitiplaction
     public int multi(int numone, int numtwo){
-        return numone + numtwo;
+        return numone * numtwo;
     }
     public float multi(float numone, float numtwo){
-        return numone + numtwo;
+        return numone * numtwo;
     }
     public double multi(double numone, double numtwo){
-        return numone + numtwo;
+        return numone * numtwo;
     }
     //divition
     public int div(int numone, int numtwo){
-        return numone + numtwo;
+        return numone / numtwo;
     }
     public float div(float numone, float numtwo){
-        return numone + numtwo;
+        return numone / numtwo;
     }
     public double div(double numone, double numtwo){
-        return numone + numtwo;
+        return numone / numtwo;
     }
 }
