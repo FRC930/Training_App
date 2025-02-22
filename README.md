@@ -1,5 +1,13 @@
 # Training_App
 Basic Java application for training.
+- Environment Setup
+- Branch Creation
+- Variables
+- Logic
+- Objects
+- Object-Oriented Programming
+- Properties and Constructors
+- Methods
 
 ## Environment Setup
 1. Setup Environment
