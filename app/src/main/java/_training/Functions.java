@@ -9,5 +9,6 @@ public class Functions {
         printHi();
         printHi();
         printHi();
+        printHi();
     }
 }
