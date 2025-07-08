@@ -1,6 +1,6 @@
 package _training;
 
-public class ReturnSolution {
+public class Return {
     static float square(float num){
         return num*num;
     }
