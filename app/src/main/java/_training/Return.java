@@ -1,7 +1,7 @@
 package _training;
 
 public class Return {
-    static float square(float num){
+    static int square(int num){
         return num*num;
     }
     public static void main(String[] args){
