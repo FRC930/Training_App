@@ -342,6 +342,7 @@ static int square(int num){
  As we can see, there is one overarching object, a computer. There are then classifications below it, such as mobile computer, desktop computer, etc. These classifications also have their own sub-classifications!
 
  These objects, or **class**ifications are called "Classes" in programming. Computers are a `class`, Desktop computers are a sub-`class` of computers.
+ 
 
  <!--ojisjsdijsdjfush;fsduhfsdfdsjafdsfjasdfjsdakfsakfbjdsabfbsdafjsdbafjksdakfbsdabfdskfbjdsabjfbasdbfjsdabfsadjkfbjksdabfdsajkfbdsaj67kbfjsdbfbdas i just had to vent my annoyance at how confusing this has to be hahahaa-->
   
