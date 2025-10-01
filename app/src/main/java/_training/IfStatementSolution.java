@@ -4,11 +4,11 @@ public class IfStatementSolution {
     public static void main(String[] args) {
         boolean brushedTeeth = true;
         boolean tookMints = false;
-        boolean didHomework = false;
+        boolean didHomework = true;
         boolean preparedForRobotics = true;
-
+        boolean havescouts = true;
         // Common Answer
-        if ((brushedTeeth || tookMints) && didHomework && preparedForRobotics) {
+        if ((brushedTeeth || tookMints) && (!havescouts) && didHomework && preparedForRobotics) {
             System.out.println("I can go to robotics tonight!");
         } else {
             if (!(brushedTeeth || tookMints)) {
@@ -19,6 +19,9 @@ public class IfStatementSolution {
             }
             if (!preparedForRobotics) {
                 System.out.println("Oop, I need to finish finding my sponsors!");
+            }
+            if (havescouts){
+                System.out.println("I got to get my rank up!");
             }
             System.out.println("I can't go to robotics yet.");
         }
