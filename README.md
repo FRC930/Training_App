@@ -9,6 +9,13 @@ Basic Java application for training.
 - Properties and Constructors
 - Methods
 
+## How to read this easier
+Looking at a large wall of monospace programming font text can be very hard on they eyes, and looking at a much easily readable formatted version would be much preferred. Thankfully, this document is written in ***markdown***! Markdown is a language for creating simple documents that can be easily read.
+
+To unlock the full powers of reading this markdown easily, go into Visual Studio Code and *right-click* on this file name in the explorer.
+
+Then, from the dropdown menu, select "Open Preview". You could also have used the shortcut listed by the button in the dropdown, default set to `Ctrl-Shift-V`.
+
 ## Environment Setup
 1. Setup Environment
  - [Environment Documentation](https://sites.google.com/view/team930programmingdoc/organization/environment)
@@ -316,88 +323,30 @@ static int square(int num){
  
  We need some other way to create and control multiple robots. Rather than manually creating all of the robots, we may just be able to make a robot factory of sorts, that makes multiple robots with ease. Object-oriented programming allows us to make these factories.
  ### What is it?
- Object means object, oriented means that something is focused on it, and programming is... programming. Putting it together, it means "Programming focused on objects."
-
- Object oriented programming is a style of programming heavily focused on "Objects". What do objects have in real life?
- - Objects have properties. A paint can be blue, or it can be pink.
- - Objects can do things. You can drive a car, or a cat can meow.
-    - They can do things depending on their properties. If a car doesn't have gas, it won't start. If it does, it will start.
- - One type of object can be another type of object. This may be confusing. 
-    - A taco *is* a food.
-    - A cat *is* an animal.
-    - Mostly, this doesn't work the other way around.
-        - A food *isn't* a taco. What if the food is a cake?
-        - An animal *isn't* a cat. What if the animal is a dog?
-- Objects have a way they are made.
-    - You manufacture cars in a factory.
-    - Cats are born.
-    - Tacos are served.
+ Object-oriented programming is a style of programming used by many modern programmers and programming languages. It is actually the **main** style of coding in Java!
  
- Literally all of these things that I had just stated are actually concepts in actual Object Oriented Programming!
+ Understanding object-oriented programming may be incredibly dificult at first, but once you start, you will quickly start to realize the benifits of this organization.
 
- Typically instead of saying "Objects", we will say "Class". It may be confusing at first, but that is okay. Properties are sometimes called variables or attributes. The way things are made are called "constructors." Things they can do are translated to methods, which kind of makes sense. The class has a "method" of doing something. Classes hide their properties with statements called ***private*** and ***public***. (Hey, I told you it was important!)
-
- ### Properties & Constructors
-
- 1. Open Food.java.
- - This isn't in the main structure of the _training folder, it is instead in the Classes folder. We have this for a bit of organization, and so it doesn't interfere with our previous projects.
- 2. Break it down.
-
- ```java
- This tells that the class is public. (something later explained)  
- |      This is what tells Java we want a class.
- |      |     This is what the class is called.
- v      v     v
- public class Food {
+ The way object-oriented programming works is by organizing concepts in programming (like a robot, or a calculator) in to an object. These objects are also organized into trees like the one below.
  ```
- - The class definition is a little more simple than functions.
- ```java
- These privates say that they are hidden from other classes.
- v
- private float score;
- private boolean tasty;
- private String name;
+            [    Computer     ]
+           /         |         \
+   [Mobile]       [Desktop]  [Calculator]
+    /  \             /   \        |
+ Phone Tablet     Laptop PC     TI-83
+   |                |             |
+ iPhone         MS Surface    TI-83 Plus
+                                  |
+                              TI-83 Plus CE
  ```
- - These all look very familiar... aside from the `private` attachments, they are just like paramaters for functions, but they are all on their own line!
- - These all would be variables, but they *don't* have their equals-signs and what they are. This is because every single Food should have its own value of these, so when we create them, they will be different.
- - Speaking of creating...
- ```java
- public Food(float score, boolean tasty, String name) {
-    this.score = score;
-    this.tasty = tasty;
-    this.name = name;
- }
- ```
- - This looks kind of familiar. It is just a function, stripped down so it doesn't have a return value, doesn't have `static`, and is named the same as the class, `Food`.
-    - These are all very important properties of a constructor ~ something called when you create a new object of the class.
-    - You can write constructors just like normal functions, just as long as you don't give a return *value*. You can call `return`, but it can't have a value attached to it.
-    - It also has `public` on it, because we want *everything* to see this constructor, so we can actually call it to create things.
- - You might notice that we are setting all of these weird variables to the paramaters. They all start with `this`, and use a dot before the variable names stated above.
-    - `this` refers to the class that the function is running in. If you had a `Food` called taco, instead of putting `taco` inside of the functions, you would just put `this` so it would work if you had a different food called pasta.
- ---
- 3. Create a new Drink class.
- - Create a new file in the Classes folder.
-    - Right click on the folder name `Classes` in the explorer on the left, and select "New File..."
-    - Open it, and you should see some code including the class definition inside.
- 4. Give this Drink some properties.
- - Examples would be color (string), bitterness (integer), or fizzy (boolean).
- - Reference Food.java for how to write properties.
- 5. Create a constructor for the Drink.
- - Reference Food.java for the example on the constructor.
- - Remember to use `this.`**[property]**` = `**[constructor parameter]**`;`.
- ### Methods
- 1. Open Food.java again.
- - Because you are no longer in the "Properties & Constructors" section, you can read below the comment!
-    - I did this so we don't have multiple confusing files and classes.
- - Look at the `String getName()` method.
-    - It looks an awfully lot like a *function*, without the `static` but there is an important difference.
-      - Functions can be used anywhere, but methods are a part of the class. They are something that uses an instance / object of the class to do an action.
-    - It returns a String that is the name of the food.
-      - We do a layer of protection like this to prevent other classes from accessing this information when they aren't supposed to, and to run any other code to control the getting.
- - See the `void setName(String newName)` method.
-   - This one has a String paramater to set the new name.
-   - It also directly sets the `this.name` to what you put in, but you could also modify the input, or do something else in the code before setting the name.
+ As we can see, there is one overarching object, a computer. There are then classifications below it, such as mobile computer, desktop computer, etc. These classifications also have their own sub-classifications!
 
+ These objects, or **class**ifications are called "Classes" in programming. Computers are a `class`, Desktop computers are a sub-`class` of computers.
+
+ <!--ojisjsdijsdjfush;fsduhfsdfdsjafdsfjasdfjsdakfsakfbjdsabfbsdafjsdbafjksdakfbsdabfdskfbjdsabjfbasdbfjsdabfsadjkfbjksdabfdsajkfbdsaj67kbfjsdbfbdas i just had to vent my annoyance at how confusing this has to be hahahaa-->
+  
+  #### Creating the Classes
+ 
 <!--
 - Objects sometimes "guard" their properties.
     - You can't directly see how much gas is in your car, it is hidden for your safety, but you can estimate how much is in it through the meter on the dashboard.
