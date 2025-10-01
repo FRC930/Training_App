@@ -23,6 +23,13 @@ public class VariablesSolution {
         
         System.out.println(myLastDecimal);
 
+        double myDoubleDecimal = 6.7;
+        double myOtherDouble = 4.1;
+
+        double myFinalDouble = myDoubleDecimal / myOtherDouble;
+
+        System.out.println(myFinalDouble);
+
         boolean ateBreakfast = true;
         boolean ateLunch = true;
         boolean ateDinner = false;

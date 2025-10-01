@@ -61,9 +61,17 @@ Basic Java application for training.
  1. Add `float myDecimal = 2.5f;` and `float mySecondDecimal = 5.0f;` to Variables.java.
  - Float stands for "Floating-point decimal."
  - You must use an f after the number declaration, and it must be a decimal.
- 2. Divide myDecimal by mySecondDecimal and store it in myLastDecimal, and print the output.
+ 2. Divide `myDecimal` by `mySecondDecimal` and store it in myLastDecimal, and print the output.
  - Hint: To divide in java, use `/`.
  - You should get 0.5, which is 1/2. This is true because 2.5 is half of 5.0.
+<!--67!!!!!!!!!-->
+#### Doubles
+ 1. Add `double myDoubleDecimal = 6.7;` and `double myOtherDouble = 4.1;`
+ - A double is just a "*double*-length" float.
+   - This means that doubles will be twice as accurate, but also require twice as much computer memory.
+ - You do not need a suffix for numbers, because doubles are the widely accepted standard for numbers.
+ 2. Divide `myDoubleDecimal` by `myOtherDouble`, storing the result in myFinalDouble. Print the final output.
+
 #### Bool
  1. Add the following code to Variables.java and run it.
  ```java
@@ -304,9 +312,9 @@ static int square(int num){
  - An example would be turn, with a "degrees per second" parameter.
  - Create new variables for each of the robots with their turn speed, passed into the new function.
  #### What is the problem with our method currently?
- This code is becoming very hard to maintain! We need to copy and paste quite a lot, and it is becoming hard to keep track of the robots already. Imagine if we had an entire tournament of robots running on the same code! (This is pretty unrealistic, but just bear with me.)
+ This code is becoming very hard to maintain! We need to copy and paste quite a lot. This would be incredibly difficult to run multiple robots simultaneously without interference.
  
- We need some other way to control multiple robots, that would definitely help with robots. Imagine if, instead of having to manage all of these functions and variables representing the robots properties, when we need a new robot, we can just say "Create a new robot" and give it its properties. We *can* do this, almost literally, with Object-Oriented Programming!
+ We need some other way to create and control multiple robots. Rather than manually creating all of the robots, we may just be able to make a robot factory of sorts, that makes multiple robots with ease. Object-oriented programming allows us to make these factories.
  ### What is it?
  Let's break it down.
  
