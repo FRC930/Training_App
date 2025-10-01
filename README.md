@@ -316,11 +316,9 @@ static int square(int num){
  
  We need some other way to create and control multiple robots. Rather than manually creating all of the robots, we may just be able to make a robot factory of sorts, that makes multiple robots with ease. Object-oriented programming allows us to make these factories.
  ### What is it?
- Let's break it down.
- 
- Object obviously means object, oriented means that something is focused on it, and programming is... programming. Putting it together, it means "Programming focused on objects."
+ Object means object, oriented means that something is focused on it, and programming is... programming. Putting it together, it means "Programming focused on objects."
 
- Object oriented programming is a style of programming heavily focused on Objects. An object doesn't have to be something physical, though it will be in this training. What do objects have in real life?
+ Object oriented programming is a style of programming heavily focused on "Objects". What do objects have in real life?
  - Objects have properties. A paint can be blue, or it can be pink.
  - Objects can do things. You can drive a car, or a cat can meow.
     - They can do things depending on their properties. If a car doesn't have gas, it won't start. If it does, it will start.
@@ -328,13 +326,8 @@ static int square(int num){
     - A taco *is* a food.
     - A cat *is* an animal.
     - Mostly, this doesn't work the other way around.
-        - A food *isn't* a taco. What if it is a cake?
-        - An animal *isn't* a cat. What if it's a dog?
-- Objects sometimes "guard" their properties.
-    - You can't directly see how much gas is in your car, it is hidden for your safety, but you can estimate how much is in it through the meter on the dashboard.
-    - You don't know what someone is thinking unless you ask them, because they want to keep their thoughts ***private***. (This term is important for later)
-    - Not all properties are guarded.
-        - You can go in a park and see all it has to offer if it is ***public***. (This term is also important for later)
+        - A food *isn't* a taco. What if the food is a cake?
+        - An animal *isn't* a cat. What if the animal is a dog?
 - Objects have a way they are made.
     - You manufacture cars in a factory.
     - Cats are born.
@@ -404,3 +397,11 @@ static int square(int num){
  - See the `void setName(String newName)` method.
    - This one has a String paramater to set the new name.
    - It also directly sets the `this.name` to what you put in, but you could also modify the input, or do something else in the code before setting the name.
+
+<!--
+- Objects sometimes "guard" their properties.
+    - You can't directly see how much gas is in your car, it is hidden for your safety, but you can estimate how much is in it through the meter on the dashboard.
+    - You don't know what someone is thinking unless you ask them, because they want to keep their thoughts ***private***. (This term is important for later)
+    - Not all properties are guarded.
+        - You can go in a park and see all it has to offer if it is ***public***. (This term is also important for later)
+-->
