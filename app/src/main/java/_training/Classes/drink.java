@@ -15,4 +15,21 @@ public class Drink {
         System.out.println(name);
        
     }
+    public boolean isfizzy(){
+        if(fizy){
+            System.out.println(name+" is a soda");
+        }else{
+            System.out.println("THIS IS NOT SODA!!! IT'S TEAAA!!!!");
+        }
+        return this.fizy;
+    }
+    public boolean isdiet(){
+        return this.diet;
+    }
+    public float getscore(){
+        return this.score;
+    }
+    public String whatisname(){
+        return this.name;
+    }
 } 
