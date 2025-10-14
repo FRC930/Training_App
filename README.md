@@ -387,7 +387,7 @@ static int square(int num){
   - This is to be sure that you can properly create the class, as all Java files have to have at least one class in them with the same name as the file.
   2. Create a new class. Name it whatever you want. (This will be *your* class to make any object you want! Try to keep it something more generic, so we can add more specific examples of the class "extending" it.)
   3. Create a second new class. Name it "`[whatever your first class is named]Main`".
-  - *Inside the class*, copy & paste this exact function in.
+  - *Inside the second class*, copy & paste this exact function in.
   ```java
   public static void main(String[] args) {
 
@@ -413,7 +413,46 @@ static int square(int num){
   ## Fields
   Fields are a fancy name for properties of a class. For example, for a "people" class, a field could be `String name` or `Color eyeColor`. For `Computer`, a field could be `int computationsRun`.
   
-  1. Open `Computer.java`.
+  Open `Computer.java`. At the beginning of the class, there is the line `int manufacturedYear;`. This is similar to how we would create variables in code before, except we don't have an equals-sign and the part afterwards. We are just stating what the variable's name and type, without any value in it. This is a field.
+
+  Fields are different from variables in the way that fields are tied to a specific object. For example, we can have a `Robot` class with a field `int teamNumber`. If we make two robots, `Robot robot1 = new Robot();` and `Robot robot2 = new Robot();`, and set their team numbers, `robot1`'s team number will be different than `robot2`'s team number, even if they're named the same thing.
+
+  1. Add a "computations run" field to `Computer`.
+  2. Add at least 2 fields to your custom parent class.
+
+  The way we read & modify the class's fields is through using the class instance's name, followed by a period and then the desired field. For example, to print a `Computer`'s `prevAction` (the `Computer` is named `com`), you would put:
+  ```java
+  System.out.println(com.prevAction);
+  ```
+  To manually change `com`'s previous action, you could do:
+  ```java
+  com.prevAction = "cool thing";
+  ```
+  There is a major problem with the code block shown above; what if we're using it to change prevAction, even if we haven't done a new action? This problem of being able to access objects' fields and modify them wrongly is fixed with the idea of Encapsulation.
+
+  1. Play around with changing the `Computer` and your parent class's fields externally. Try printing them, modifying them, etc.
+
+  Fields in `Computer` will be existent on `Mobile` objects as well, and same with your two classes. You just won't be able to access these fields in the child classes yet, because we haven't specified that the child classes can access it yet. They still do exist, we just can't use them.
+
+  ## Access Modifiers
+
+  Access modifiers are things that change what parts of the code can see a class's fields. There are three basic ones:
+  - `public`: *All* of your Java code can see this field. This doesn't have much use in fields, but we will see it used nearly all the time in methods. It is also seen before `class` in many places.
+  - `protected`: Only classes inheriting your class can see this field. This is scarcely used, but can be good to demonstrate simple encapsulation before using methods.
+  - `private`: Only the code & methods inside this class can see the variable. This is similar to the default option (nothing), except in the default option you can modify the field anywhere in the same *file*, where with `private` you can only modify the field in the `class`.
+
+  Access modifiers are placed before a variable's type. For example:
+  ```java
+  public int coolNum;
+  ```
+  is a public integer of a *really cool number*.
+  ```java
+  private int notCoolNum;
+  ```
+  is a private integer of a not-so-cool number.
+
+  1. Fix the fields in `Computer` to be `protected`. (For now!)
+  2. Fix the fields in your parent class to be `protected` as well. 
 
   ## Methods
   1. Open `Computer.java`.
