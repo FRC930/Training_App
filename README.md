@@ -461,7 +461,7 @@ static int square(int num){
 
   The only thing different between methods and functions is that functions don't need a class; they just do something independt of objects. They may take in or return them, but they don't belong to objects. Methods, on the other hand, are parts of Objects. They need a specific object to be able to work, as they are a part of it. They may be able to read or change parts of the object.
 
-  Because of how Java is **absolutely** Object-Oriented, literally *everything* in Java is an object. This means that all functions also need to be part of objects / classes. This is why we define our functions still inside the class. We will talk about what `static` methods and functions actually are
+  Because of how Java is **absolutely** Object-Oriented, literally *everything* in Java is an object. This means that all functions also need to be part of objects / classes. This is why we define our functions still inside the class. We will talk about what `static` methods and functions actually are later.
 
   ### Calling Methods
   To use methods, we use our normal function-calling syntax with an extra prefix: [*variable name*]`.`[*function*]. For example, calling the `add` method on our computer variable (**if the `Computer` variable were named *myPC***) would be `myPC.add(1,2);`.
@@ -488,6 +488,8 @@ static int square(int num){
 
   Inside our `Computer` class, we see the definitions of the two methods `add` and `subtract`. These definitions are incredibly similar to regular function definitions. The only thing they're missing is the `static` part, which differentiates between functions (with `static`) and methods (without `static`).
 
+  Access modifiers (`public`, `private`, `protected`) can also be used on methods, alike fields. We have been using always `public` so that we are able to call the methods from outside the class, but you could also have internal utility functions that are `private`.
+
   1. Following how `add` and `subtract` were defined in `Computer`, create `multiply` and `divide`.
   2. Call these methods in the main function of `Computer.java` using an instance of the class.
 
@@ -511,11 +513,19 @@ static int square(int num){
   System.out.println(x.divide(6,7));
   </details>
 
- 
-<!--
-- Objects sometimes "guard" their properties.
-    - You can't directly see how much gas is in your car, it is hidden for your safety, but you can estimate how much is in it through the meter on the dashboard.
-    - You don't know what someone is thinking unless you ask them, because they want to keep their thoughts ***private***. (This term is important for later)
-    - Not all properties are guarded.
-        - You can go in a park and see all it has to offer if it is ***public***. (This term is also important for later)
--->
+  1. Add and call your own 3 methods in your parent class.
+  - Remember to *call* the methods outside the class, inside of the main function.
+
+  ### Methods in methods
+
+  Methods can be called inside of other methods. This is similar to just calling the other method as a function. For example, if we were to add a new method to `Computer` using another method, we could put:
+  ```java
+  public void printAdd(int x, int y) {
+    System.out.println(add(x,y));
+  }
+  ```
+
+  1. In your parent class, add another method that uses one of your previously made methods.
+  
+  ## Encapsulation
+  Even though we learned
