@@ -395,6 +395,26 @@ static int square(int num){
   ```
   4. Instantiate (create a variable of your class) in the main function you pasted.
 
+  ## Inheritance
+  During the explanation of Object Oriented Programming, we included a "tree" of computer and alike things. The idea of "subclasses", which were objects with similar traits to the classes above them, is the soul of inheritance in Java. Inheritance is the idea that classes can be extended to have newer traits, while reusing functions & variables from their parent class.
+  
+  There are a few specific terms in OOP related to inheritance:
+  - **Inherit** or **Extend**: The action of a class taking some traits from another class, while adding its own traits.
+  - **Parent**: The class something inherits from.
+  - **Children**: All the classes inheriting from a class.
+  - **Class Hierarchy**: The entire representation of classes inheriting eachother. (Also known as a class tree)
+  - **Substitutability**: The idea that a child class can effectively replace its parent where it is used. (For example, a `Calculator` can still be used as a `Computer` in code, but a `Calculator` has more / different functionality.)
+
+  Inheriting classes is very easy in Java. First, create a new class. Then, after the class name & *before* the `{`, add `extends `[*parent class name*]` `. This should be done in a different / new file than the parent, because you are creating a new class. For example, open `Mobile.java`. On the third line, it shows how extending works syntactically.
+
+  1. Create a new class, inheriting from your already-existing class.
+  - The inheritance should make sense, as we will work with it for the remainder of the OOP course.
+
+  ## Fields
+  Fields are a fancy name for properties of a class. For example, for a "people" class, a field could be `String name` or `Color eyeColor`. For `Computer`, a field could be `int computationsRun`.
+  
+  1. Open `Computer.java`.
+
   ## Methods
   1. Open `Computer.java`.
 

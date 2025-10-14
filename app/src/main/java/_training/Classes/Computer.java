@@ -2,6 +2,8 @@ package _training.Classes;
 
 public class Computer {
 
+    int manufacturedYear;
+
     public int add(int x, int y) {
         return x + y;
     }
@@ -11,8 +13,6 @@ public class Computer {
     }
 
     // TODO: Add multiplication & division
-
-    int manufacturedYear;
 }
 
 public class ComputerMain {
