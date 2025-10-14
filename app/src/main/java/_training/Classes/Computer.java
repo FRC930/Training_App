@@ -12,5 +12,11 @@ public class Computer {
 
     // TODO: Add multiplication & division
 
-    double computingPower;
+    int manufacturedYear;
+}
+
+public class ComputerMain {
+    public static void main(String[] args) {
+
+    }
 }

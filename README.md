@@ -346,7 +346,83 @@ static int square(int num){
 
  <!--ojisjsdijsdjfush;fsduhfsdfdsjafdsfjasdfjsdakfsakfbjdsabfbsdafjsdbafjksdakfbsdabfdskfbjdsabjfbasdbfjsdabfsadjkfbjksdabfdsajkfbdsaj67kbfjsdbfbdas i just had to vent my annoyance at how confusing this has to be hahahaa-->
   
-  #### Creating the Classes
+  ## Creating & Instantiating Classes
+  1. Open the file `Computer.java` under the directory (folder) `Classes`.
+
+  At the top of this code (line 3), it has the following statement:
+  ```java
+  public class Computer {
+  ```
+  Breaking it down word for word, we get:
+  - **Public**: Everthing in your Java program can see / use it.
+  - **class**: This new thing is going to be a *class*.
+  - **Computer** The name of this class is going to be "*Computer*".
+  - After these words, the pair of `{}` brackets (one after `Computer` and one at the end of the document, before `public class ComputerMain`) show that all the code within these blocks is a part of our class.
+
+  This is how we define our class, `Computer`. It is fairly simple syntax.
+
+  <details>
+  <summary>Why do we have "public class ComputerMain" at the end of the file?</summary>
+  In Java, all functions (which are what you can put code in) must be a part of a class.
+  
+  We will learn more about these functions, formally called "methods", but for now just understand that we need the function running our code to be in a special class that is marked to run the code.
+
+  You can also look at our previous code in other files to see that they all have classes as well, and the specially marked `public static void main(String[] args) function`.
+  </details>
+
+  Creating a new `Computer` is easy; all you need to do is create an new variable.
+
+  1. In the `main` function of the `ComputerMain` class (which will be referred to as just "the main function"), create a new variable of type `Computer`.
+  2. On the right side of the equal sign, type: `new Computer();`
+  <details>
+  <summary>Click for solution.</summary>
+  Computer myPC = new Computer();
+  </details>
+
+  The variables of a class are called "instances" of the class, and the process of creating an instance is formally called "instantiation".
+
+  Now you can create your own class!
+  
+  1.  Create a new file in `Classes`. Name it with a captial letter at the start of each word, with no spaces. (CamelCase)
+  - This is to be sure that you can properly create the class, as all Java files have to have at least one class in them with the same name as the file.
+  2. Create a new class. Name it whatever you want. (This will be *your* class to make any object you want! Try to keep it something more generic, so we can add more specific examples of the class "extending" it.)
+  3. Create a second new class. Name it "`[whatever your first class is named]Main`".
+  - *Inside the class*, copy & paste this exact function in.
+  ```java
+  public static void main(String[] args) {
+
+    }
+  ```
+  4. Instantiate (create a variable of your class) in the main function you pasted.
+
+  ## Methods
+  1. Open `Computer.java`.
+
+  In short, methods are just functions that are specific to a class object. Methods can be thought of "actions" an object can do. For example, calculators can add or subtract, and people can talk.
+
+  The only thing different between methods and functions is that functions don't need a class; they just do something independt of objects. They may take in or return them, but they don't belong to objects. Methods, on the other hand, are parts of Objects. They need a specific object to be able to work, as they are a part of it. They may be able to read or change parts of the object.
+
+  Because of how Java is **absolutely** Object-Oriented, literally *everything* in Java is an object. This means that all functions also need to be part of objects / classes. This is why we define our functions still inside the class. We will talk about what `static` methods and functions actually are
+
+  ### Calling Methods
+  To use methods, we use our normal function-calling syntax with an extra prefix: [*variable name*]`.`[*function*]. For example, calling the `add` method on our computer variable (**if the `Computer` variable were named *myPC***) would be `myPC.add(1,2);`.
+
+  <details>
+  <summary>Is this related to the periods in System.out.println("Hello!"); ?</summary>
+  Yes, these periods in our print command do actually mean we're calling a method of the system class! We'll talk about why we use "System" (the class) directly later, instead of creating a System object.
+  
+  The reason we use a second period in the "System.out.println" statement is because "out" is similar to a class *inside* of System. Thus, the println method is a method of *out* (for output), which is a class inside "System".
+  </details>
+
+  1. In the main function, call the `add` and `subtract` methods on your `Computer`.
+  - Remember these functions return values, so you should store them in variables or print them!
+
+  ### Creating methods
+
+  Inside our `Computer` class, we see the definitions of the two methods `add` and `subtract`. These definitions are incredibly similar to regular function definitions. The only thing they're missing is the `static` part, which differentiates between functions (with `static`) and methods (without `static`).
+
+  1. Following how `add` and `subtract` were defined in `Computer`, create `multiply` and `divide`.
+
  
 <!--
 - Objects sometimes "guard" their properties.
