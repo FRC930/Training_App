@@ -64,6 +64,7 @@ Then, from the dropdown menu, select "Open Preview". You could also have used th
  When you are adding the two strings together, it adds "Hello!" and "Again!". There isn't a space inbetween, resulting in "Hello!Again!" You can fix it by adding a space after "Hello! " or before " Again!" View the solution if confused.
  </details>
 
+<!--67!!!!!!!!-->
 #### Float
  1. Add `float myDecimal = 2.5f;` and `float mySecondDecimal = 5.0f;` to Variables.java.
  - Float stands for "Floating-point decimal."
@@ -71,7 +72,6 @@ Then, from the dropdown menu, select "Open Preview". You could also have used th
  2. Divide `myDecimal` by `mySecondDecimal` and store it in myLastDecimal, and print the output.
  - Hint: To divide in java, use `/`.
  - You should get 0.5, which is 1/2. This is true because 2.5 is half of 5.0.
-<!--67!!!!!!!!!-->
 #### Doubles
  1. Add `double myDoubleDecimal = 6.7;` and `double myOtherDouble = 4.1;`
  - A double is just a "*double*-length" float.
@@ -164,6 +164,7 @@ if ((brushedTeeth || tookMints) && didHomework && preparedForRobotics) {
  - Going back to the while example, you would want to change the conditional section to change how many times the loop runs. Look between the while example and the for loop, and find where you would see the conditional.
  3. Why use for instead of while?
  - For loops are more compact, because they have the iterator (counter) built in.
+ <!--67!!!!!!!!-->
  - With while loops, you need to initialize a variable before the loop, have the conditional statement, and have to remember to increment the variable inside the loop.
  - With for loops, you can just have the declaration, conditional, and increment all together in the statement.
  4. Create a for inside of the existing for.
@@ -263,6 +264,7 @@ static void square(int num, int num2)
 
 <details>
 <summary>Click for solution.</summary>
+<!--67!!!!!!!!-->
 multiply(3, 6);
 multiply(2, 9);
 </details>
@@ -362,6 +364,7 @@ static int square(int num){
   This is how we define our class, `Computer`. It is fairly simple syntax.
 
   <details>
+  <!--67!!!!!!!!-->
   <summary>Why do we have "public class ComputerMain" at the end of the file?</summary>
   In Java, all functions (which are what you can put code in) must be a part of a class.
   
@@ -413,7 +416,9 @@ static int square(int num){
   ## Fields
   Fields are a fancy name for properties of a class. For example, for a "people" class, a field could be `String name` or `Color eyeColor`. For `Computer`, a field could be `int computationsRun`.
   
-  Open `Computer.java`. At the beginning of the class, there is the line `int manufacturedYear;`. This is similar to how we would create variables in code before, except we don't have an equals-sign and the part afterwards. We are just stating what the variable's name and type, without any value in it. This is a field.
+  Open `Computer.java`. At the beginning of the class, there is the line `int manufacturedYear;`. This is similar to how we would create variables in code before, except we don't have an equals-sign and the part afterwards. We are just stating what the variable's name and type, without any value in it. This is a field declaration.
+
+  Fields can also be stated like a regular variable, with an equals sign and default value. This is nice to give default values, but later on we'll talk about constructors, which are more useful for setting starting values in objects.
 
   Fields are different from variables in the way that fields are tied to a specific object. For example, we can have a `Robot` class with a field `int teamNumber`. If we make two robots, `Robot robot1 = new Robot();` and `Robot robot2 = new Robot();`, and set their team numbers, `robot1`'s team number will be different than `robot2`'s team number, even if they're named the same thing.
 
@@ -518,14 +523,25 @@ static int square(int num){
 
   ### Methods in methods
 
-  Methods can be called inside of other methods. This is similar to just calling the other method as a function. For example, if we were to add a new method to `Computer` using another method, we could put:
+  Methods can be called inside of other methods. The way we would need to do that is put the name of the instance, then a period and the function, right? But, since we're in the definition of the class, we have no idea what the class instance is going to be called!
+  
+  To counter this, Java provides a default name for the current instance for use in methods. The keyword `this` refers to the current instance a method is running on For example, if we were to add a new method to `Computer` using another method, we could put:
   ```java
   public void printAdd(int x, int y) {
-    System.out.println(add(x,y));
+    System.out.println(this.add(x,y));
   }
   ```
 
   1. In your parent class, add another method that uses one of your previously made methods.
   
-  ## Encapsulation
-  Even though we learned
+  ## Encapsulation & Modifying Fields in Methods
+  Even though we learned about the access modifiers, actually using them seems to be fairly silly. We can make the fields private, but then we can't do anything with them yet. Well, when the fields are private, we can still modify them inside of methods in the class!
+  
+  The syntax for modifying a field inside a method is similar to calling another method within a method.
+
+  1. Open and observe `Classes/Counter.java`'s syntax.
+  2. Add value decrement & value doubling methods.
+
+  We can see here, the syntax for getting & modifying a field is similar to how you would do it outside, but using Java's helpful `this` keyword to refer to the class itself.
+
+  ### Why use methods to "hide" variables?
