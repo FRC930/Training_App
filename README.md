@@ -416,12 +416,41 @@ static int square(int num){
 
   1. In the main function, call the `add` and `subtract` methods on your `Computer`.
   - Remember these functions return values, so you should store them in variables or print them!
+  <details>
+  <summary>Solution</summary>
+  The variable X represents your *Computer* variable. The numbers, variable names, actions, etc. are arbritrary.
+  <br><br>
+  int mySum = X.add(5,7);
+  int mySub = X.sub(mySum, 2);
+  System.out.println(mySub);
+  </details>
 
   ### Creating methods
 
   Inside our `Computer` class, we see the definitions of the two methods `add` and `subtract`. These definitions are incredibly similar to regular function definitions. The only thing they're missing is the `static` part, which differentiates between functions (with `static`) and methods (without `static`).
 
   1. Following how `add` and `subtract` were defined in `Computer`, create `multiply` and `divide`.
+  2. Call these methods in the main function of `Computer.java` using an instance of the class.
+
+  <details>
+  <summary>Solution #1</summary>
+  public int multiply(int x, int y) {
+    return x * y;
+  }
+
+  public double divide (int x, int y) {
+    return x / y;
+  }
+  </details>
+  <details>
+  <summary>Solution #2</summary>
+  Computer x = new Computer();
+  <br>
+  ...
+  <br>
+  System.out.println(x.multiply(5,2));
+  System.out.println(x.divide(6,7));
+  </details>
 
  
 <!--
