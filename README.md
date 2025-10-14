@@ -545,3 +545,23 @@ static int square(int num){
   We can see here, the syntax for getting & modifying a field is similar to how you would do it outside, but using Java's helpful `this` keyword to refer to the class itself.
 
   ### Why use methods to "hide" variables?
+  Return to our previous problem before using methods; any code can just modify variables in any way we want. Using methods and access modifiers to hide variables a bit better helps with this problem, as we can define in our methods how exactly we will modify the variables. An example of this was in our `Counter.java`. We could only increment, decrement, and double our counter. This prevented weird actions such as setting the count to a random number or performing unwanted operations.
+  <!--TAHRARAHRAHRHARHARHRARHAHRAHRUSDOFIHDSLKKKKJTW:Jthis must be so hard to understand what is going on, where is going on, how is going on, and why is going on-->
+
+  ### Getters and Setters
+
+  Getters and setters are specific names for methods that perform that exact purpose; they get and set a variable.
+
+  ```java
+  private int setMyVar(int n) {
+    this.myVar = n;
+  }
+  public int getMyVar() {
+    return this.myVar;
+  }
+  ```
+
+  Using these types of methods allows you to easily fine-tune control to variables, and allows for checks that the value is legal before setting it.
+
+  1. Change all of the `protected` variables to `private`s in `Computer` and your parent class, and use getters / setters where appropriate. 
+
