@@ -14,11 +14,7 @@ public class Computer {
         return x - y;
     }
 
-    // TODO: Add multiplication (mul) & division (div)
-}
-
-public class ComputerMain {
     public static void main(String[] args) {
-
+        
     }
 }

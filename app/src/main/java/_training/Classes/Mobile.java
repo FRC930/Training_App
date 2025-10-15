@@ -25,10 +25,8 @@ public class Mobile extends Computer {
             onHomeScreen = false;
         }
     }
-}
 
-public class MobileMain {
     public static void main(String[] args) {
-
+        
     }
 }

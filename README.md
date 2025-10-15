@@ -359,23 +359,13 @@ static int square(int num){
   - **Public**: Everthing in your Java program can see / use it.
   - **class**: This new thing is going to be a *class*.
   - **Computer** The name of this class is going to be "*Computer*".
-  - After these words, the pair of `{}` brackets (one after `Computer` and one at the end of the document, before `public class ComputerMain`) show that all the code within these blocks is a part of our class.
+  - After these words, the pair of `{}` brackets (one after `Computer` and one at the end of the document) show that all the code within these blocks is a part of our class.
 
   This is how we define our class, `Computer`. It is fairly simple syntax.
 
-  <details>
-  <!--67!!!!!!!!-->
-  <summary>Why do we have "public class ComputerMain" at the end of the file?</summary>
-  In Java, all functions (which are what you can put code in) must be a part of a class.
-  
-  We will learn more about these functions, formally called "methods", but for now just understand that we need the function running our code to be in a special class that is marked to run the code.
-
-  You can also look at our previous code in other files to see that they all have classes as well, and the specially marked `public static void main(String[] args) function`.
-  </details>
-
   Creating a new `Computer` is easy; all you need to do is create an new variable.
-
-  1. In the `main` function of the `ComputerMain` class (which will be referred to as just "the main function"), create a new variable of type `Computer`.
+  <!--67-->
+  1. In the `main` function of the `Computer` class (which will be referred to as just "the main function"), create a new variable of type `Computer`.
   2. On the right side of the equal sign, type: `new Computer();`
   <details>
   <summary>Click for solution.</summary>
@@ -389,8 +379,7 @@ static int square(int num){
   1.  Create a new file in `Classes`. Name it with a captial letter at the start of each word, with no spaces. (CamelCase)
   - This is to be sure that you can properly create the class, as all Java files have to have at least one class in them with the same name as the file.
   2. Create a new class. Name it whatever you want. (This will be *your* class to make any object you want! Try to keep it something more generic, so we can add more specific examples of the class "extending" it.)
-  3. Create a second new class. Name it "`[whatever your first class is named]Main`".
-  - *Inside the second class*, copy & paste this exact function in.
+  3. *Inside the class*, copy & paste this exact function in.
   ```java
   public static void main(String[] args) {
 
@@ -406,7 +395,7 @@ static int square(int num){
   - **Parent**: The class something inherits from.
   - **Children**: All the classes inheriting from a class.
   - **Class Hierarchy**: The entire representation of classes inheriting eachother. (Also known as a class tree)
-  - **Substitutability**: The idea that a child class can effectively replace its parent where it is used. (For example, a `Calculator` can still be used as a `Computer` in code, but a `Calculator` has more / different functionality.)
+  - **Polymorphism** (lit. many change ability): The idea that a child class can effectively replace its parent where it is used. (For example, a `Calculator` can still be used as a `Computer` in code, but a `Calculator` has more / different functionality.)
 
   Inheriting classes is very easy in Java. First, create a new class. Then, after the class name & *before* the `{`, add `extends `[*parent class name*]` `. This should be done in a different / new file than the parent, because you are creating a new class. For example, open `Mobile.java`. On the third line, it shows how extending works syntactically.
 
@@ -564,4 +553,36 @@ static int square(int num){
   Using these types of methods allows you to easily fine-tune control to variables, and allows for checks that the value is legal before setting it.
 
   1. Change all of the `protected` variables to `private`s in `Computer` and your parent class, and use getters / setters where appropriate. 
+
+  ## Constructors
+
+  So far, if we compare instances as "objects", and the class being the blueprint, so far we can only create one kind of object from the start. But, using constructors, we can make a "changeable" blueprint, where we can change the defaults of a class.
+
+  1. Open `Mobile.java`.
+
+  At the start of the `Mobile` class after the fields, there is a strange method.
+
+  ```java
+  public Calculator(Sting colour) {
+    this.colour = colour;
+    ...
+  }
+  ```
+
+  This method is missing a return type, and its name is ***exactly*** the same as the class name, `Calculator`. These two distinctive properties differentiate a *constructor* from any other method.
+
+  When running this code:
+  ```java
+  Calculator coolCalc = new Calculator();
+  ``` 
+  we will need to supply parameters when calling `Calculator()`. For instance:
+  ```java
+  Calculator pinkCalc = new Calculator("pink");
+  ```
+
+  This is because, when using the `new` keyword and "calling" the class to instance our objects, we are really calling the class's constructor.
+
+  The reason there is no `return` statement at the end of the constructor is because it's implied that it runs `return this;`. All constructors would need to return the constructed class at the end, otherwise it wouldn't be a constructor. Java makes the process of `return this;` easier by making it implicit so we don't need to type it.
+
+  The same thing 
 
