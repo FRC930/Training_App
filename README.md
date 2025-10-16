@@ -584,5 +584,11 @@ static int square(int num){
 
   The reason there is no `return` statement at the end of the constructor is because it's implied that it runs `return this;`. All constructors would need to return the constructed class at the end, otherwise it wouldn't be a constructor. Java makes the process of `return this;` easier by making it implicit so we don't need to type it.
 
-  The same thing 
+  The same concept applies to the reason we don't have a return *type* in the function definition; we always should return `this` from constructors, and the type of `this` should always be the class we're defining. The return type becomes implicit.
 
+  1. Open `Computer.java`.
+  2. (if you don't have it) Add a "computations completed" field to `Computer`.
+  3. Add some other field that will be customized with the constructor. 
+  4. Properly define a constructor for `Computer` that will initialize most of your fields.
+  5. Open your class.
+  6. Add a constructor to your class, capable of initializing the fields you want.
