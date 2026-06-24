@@ -49,6 +49,14 @@ Then, from the dropdown menu, select "Open Preview". You could also have used th
  - Hint: The sign for multiplication in Java is `*`, and Java follows Order of Operations (Parentheses, Multiplication / Division, Addition / Subtraction)
  - The solution is found in VariablesSolution.java
 
+### Naming Variables
+When programming, you should be as clear as possible with everything, which includes how you *name* everything. Variable names are especially important, because they're used absolutely everywhere, so you'll need to be careful naming them so you and other future programs will know what they are for.
+#### General Rules for naming in Java:
+- Start with a lowercase letter. (`int counter`)
+- To differentiate multiple words, use a single capital at the start of the next word. (`int advancedCounter`)
+- Keep the name short and objective. (~`RobotState enumForTrackingCurrentRobotState`~) (`RobotState currentState`)
+- Avoid using shorthand / single-letter variables outside of small calculations or sections. (`int i` should only be used in a loop for example)
+
 ### Variable Types
 #### String
  1. Add `String myText = "Hello!";` and `String myOtherText = "Again!";` to Variables.java.
