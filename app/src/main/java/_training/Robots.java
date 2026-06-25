@@ -7,9 +7,13 @@ public class Robots {
     static void shootRobot(String direction){
         System.out.println("Robot is shooting to the "+direction);
     }
+    static void implodeRobot(Boolean state){
+        System.out.println("Robot imploded: "+state);
+    }
     public static void main(String[] args){
         int robotSpeed = 20; // Set the robot speed
         driveRobot("forward", robotSpeed); // Drive the robot forward
         shootRobot("left"); // Shoot the robot to the left
+        implodeRobot(false); // state the robot is imploded
     }
 }

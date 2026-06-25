@@ -19,6 +19,7 @@ public class Computer {
 
 public class ComputerMain {
     public static void main(String[] args) {
+        Computer bluh = new Computer();
 
     }
 }
