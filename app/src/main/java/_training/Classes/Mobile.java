@@ -26,9 +26,3 @@ public class Mobile extends Computer {
         }
     }
 }
-
-public class MobileMain {
-    public static void main(String[] args) {
-
-    }
-}
