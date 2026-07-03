@@ -3,6 +3,7 @@ package _training;
 public class Functions {
     static void printHi() {
         System.out.println("Hello!");
+        System.out.println("Goodbye!");
     }
 
     public static void main(String[] args) {
