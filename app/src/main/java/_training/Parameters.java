@@ -1,13 +1,25 @@
 package _training;
 
 public class Parameters {
-    static void square(int num){
-        System.out.println(num*num);
+    static void multiply(int num, int numTwo){
+        System.out.println(num*numTwo);
+    }
+    static void multiplyDecimals(double numDoubleOne, double numDoubleTwo){
+        System.out.println(numDoubleOne*numDoubleTwo);
     }
 
     public static void main(String[] args){
-        square(3);
-        square(5);
-        square(10);
+        multiply(3, 2);
+        multiply(5,2);
+        multiply(10,2);
+
+        int myNum = 5;
+        int myNum2 = 10;
+
+        multiply(myNum, myNum2);
+        multiplyDecimals(2.3, 6.1);
+
+
+
     }
 }

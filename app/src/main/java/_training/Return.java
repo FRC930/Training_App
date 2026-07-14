@@ -7,6 +7,7 @@ public class Return {
     public static void main(String[] args){
         float squareFive = square(5);
         float squareTwo = square(2);
-        System.out.println(squareFive + squareTwo);
+        System.out.println(square(5) + square(2));
+        System.out.println(square(3));
     }
 }
