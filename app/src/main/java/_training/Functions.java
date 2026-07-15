@@ -6,6 +6,8 @@ public class Functions {
 
         System.out.println("Print");
         System.out.println("HI");
+        System.out.println("1 1");
+        System.out.println("(_)");
         
     }
 
