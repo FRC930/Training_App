@@ -12,11 +12,3 @@ public class Counter {
         return ++this.current;
     }
 }
-
-public class CounterMain {
-    public static void main(String[] args) {
-        Counter score = new Counter();
-
-        score
-    }
-}
