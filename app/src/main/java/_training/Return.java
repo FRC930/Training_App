@@ -9,7 +9,7 @@ public class Return {
         float squareTwo = square(2);
         float squareOne = square(1);
         float squareFour = square(4);
-        float squareOne + squareFour = squareFinal;
+        float squareFinal = squareOne + squareFour;
         System.out.println(squareFinal + squareFour);
         System.out.println(squareOne + squareFour);
         System.out.println(squareFive + squareTwo);
