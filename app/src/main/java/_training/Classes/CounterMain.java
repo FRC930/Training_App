@@ -5,6 +5,6 @@ public class CounterMain {
         Counter score = new Counter();
 
         // Fix this line! (make score increment)
-        score
+        //score
     }
 }
