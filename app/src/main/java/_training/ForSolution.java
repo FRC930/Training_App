@@ -8,5 +8,6 @@ public class ForSolution {
             }
             System.out.println("I have to run "+i+" more circles today!");
         }
+        
     }
 }

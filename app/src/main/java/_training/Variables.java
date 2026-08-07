@@ -10,5 +10,10 @@ public class Variables {
         int myFinalFinalFinalFinalNum = myOtherOtherNum * myFinalNum;
         System.out.println(myFinalNum);
         System.out.println(myFinalFinalFinalFinalNum);
+        String myfinalfinalfinalfinalfinalfinalfinalfinalfinalfinalfinalfinalfinalFINALtext="this is my final final fianl final final final final final final final final final final final final final final fianl final final final FINAL text...";
+        String myfinalfinalfinalfinalfinalfinalfinalfinalfinal="idk";
+        String myotherotherotherotherfinalfinaltext=myfinalfinalfinalfinalfinalfinalfinalfinalfinalfinalfinalfinalfinalFINALtext+myfinalfinalfinalfinalfinalfinalfinalfinalfinal;
+        System.out.println(myotherotherotherotherfinalfinaltext);
+        
     }
 }
