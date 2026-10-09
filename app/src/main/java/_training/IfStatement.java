@@ -8,7 +8,12 @@ public class IfStatement {
         boolean preparedForRobotics = true;
 
         if((brushedTeeth || tookMints) && didHomework && preparedForRobotics){
-            System.out.println("I can go to robotics tonight!");
+            System.out.println("I can go to the pizza place with my friends!");
+            if ( (brushedTeeth || tookMints) && didHomework && preparedForRobotics) {
+    System.out.println("I can go to the pizza place with my friends!");
+} else {
+    System.out.println("I can't go to the pizza place with my friends.");
+}
         }
     }
 }
